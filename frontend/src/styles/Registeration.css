@@ -1,0 +1,286 @@
+body {
+transition: background-color 0.5s, color 0.5s;
+background-color: hsl(222, 84%, 5%);
+color: white;
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+/* Navbar links hover effect */
+.nav-links a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.nav-links a:hover {
+  color: #3498db;
+  text-decoration: underline;
+}
+
+/* Theme specific changes */
+body.light-theme {
+background-color:rgba(255, 255, 255, 0.776);
+color:rgb(0, 0, 0);
+}
+
+body.dark-theme {
+background-color: hsl(222, 84%, 5%);
+  
+color: #ffffff;
+}
+.dark-theme {
+background-color: hsla(224, 94%, 6%, 0.843);
+color: #000000;
+}
+
+.dark-theme .navbar {
+background-color: hsl(222, 84%, 5%);
+}
+
+.dark-theme .nav-links a {
+color: #ffffff;
+}
+
+.dark-theme .nav-links a:hover {
+color: #bbbbbb;
+} 
+.side-menu {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  background-color: #0c0c0cdd;
+  color: white;
+  padding-top: 60px;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-100%);
+}
+
+.side-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.side-menu ul li {
+  padding: 15px;
+  margin: auto;
+}
+
+.side-menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.side-menu.open {
+  transform: translateX(0);
+}
+
+.menu-toggle {
+  display: none;
+  position: fixed;
+  top: 5px;
+  left: 10px;
+  background-color: transparent;
+  border: none;
+  padding: 5px 15px;
+  font-size: 30px;
+  cursor: pointer;
+}
+body.light-theme .menu-toggle{
+color: #000;
+}
+body.dark-theme .menu-toggle{
+color: #fff;
+}
+body.light-theme .close-btn{
+color: #000;
+}
+body.light-theme .side-menu{
+background-color: rgba(255, 255, 255, 0.99);
+}
+body.light-theme .side-menu ul li a{
+color: #000;
+}
+.close-btn {
+position: absolute;
+top: 20px;
+right: 15px;
+background-color: transparent;
+color: white;
+font-size: 40px;
+border: none;
+cursor: pointer;
+}
+.register-container {
+display: flex;
+justify-content: space-between;
+margin: 100px auto;
+width: 90%;
+max-width: 1200px;
+}
+
+.register-form {
+display: flex;
+flex-direction: column;
+width: 60%;
+gap: 15px;
+}
+
+.register-form label {
+font-size: 1.1em;
+color: #ddd;
+}
+.password-container i{
+position: relative;
+right: 40px;
+color: #000;
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="tel"],
+.register-form input[type="password"],
+.register-form input[type="date"] {
+width: 65%;
+padding: 15px;
+border: none;
+border-radius: 5px;
+background-color: #f8f8f8;
+color: #333;
+font-size: 1em;
+}
+
+body.light-theme .register-container .register-form label{
+color: black;
+}
+body.light-theme .register-container .register-form input[type="text"],body.light-theme .register-container .register-form input[type="email"],body.light-theme .register-container .register-form input[type="tel"],body.light-theme .register-container .register-form input[type="password"],body.light-theme .register-container .register-form input[type="date"]{
+border: 1px solid black;
+background-color: none;
+}
+body.light-theme .qr-section label{
+color: white;
+}
+.qr-section {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 70%;
+background-color:transparent;
+padding: 20px;
+border-radius: 20px;
+margin: -125% 0 0 100% ;
+}
+
+.qr-section img {
+width: 80%;
+border-radius: 10px;
+margin: 20px 0 10px 0;
+}
+
+.qr-section label {
+color: #fff;
+margin: 10px;
+font-size: 1em;
+text-align: center;
+}
+.qr-section input{
+margin-bottom:20px ;
+}
+.RBtn {
+margin: 35%;
+width: 100%;
+padding: 10px;
+font-size: 1.1em;
+font-weight: bold;
+border: none;
+border-radius: 8px;
+background-color: #3498db;
+color: white;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+.toggle-wrapper{
+  top: 12px;
+}
+.navbar .login-button{
+  margin-right: 15%;
+}
+.register-container {
+  flex-direction: column;
+  align-items: center;
+  margin-left: 15%;
+}
+
+.register-form {
+  margin: 0 0 0 10%;
+  width: 90%;
+}
+
+.qr-section {
+  width: 70%;
+  margin: 20px 0 0 0;
+}
+
+.RBtn {
+  width: 78%;
+  margin: auto 0;
+}
+}
+
+@media (max-width: 500px) {
+.toggle-wrapper{
+  top: 15px;
+}
+.navbar .login-button{
+  margin-right: 22%;
+}
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  width: 100%; 
+  margin: 80px 0 0 0;
+}
+.register-form {
+  width: 80%; 
+  align-items: flex-start;
+  margin: 0 0 0 20%; 
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="tel"],
+.register-form input[type="password"],
+.register-form input[type="date"] {
+  width: 70%; /* Full width on small screens */
+  padding: 12px;
+  font-size: 0.9em;
+}
+.password-container{
+  width: 100%;
+  margin: 0 0 0 0;
+}
+.qr-section{
+width: auto;
+margin: 0 0 0 -28%;
+}
+.g label{
+  padding: 5px;
+  align-items: center;
+}
+.y label{
+  padding: 5px;
+}
+.RBtn {
+  width: 50%; /* Full width for button */
+  margin: 0 0 0 15%; /* Adjust margin to prevent centering */
+}
+}

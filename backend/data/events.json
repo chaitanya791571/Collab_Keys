@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1",
+    "name": "HackerRank Contest",
+    "date": "2024-12-05",
+    "details": "Participate in a coding contest hosted on HackerRank."
+  },
+  {
+    "id": "2",
+    "name": "Quiz",
+    "date": "2024-11-30",
+    "details": "An engaging quiz competition covering various subjects."
+  },
+  {
+    "id": "3",
+    "name": "Group Discussion",
+    "date": "2024-12-10",
+    "topic": "The Impact of AI on Society",
+    "details": "A group discussion focused on the evolving impact of AI."
+  }
+]

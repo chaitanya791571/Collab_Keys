@@ -1,0 +1,123 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  max-width: 500px;
+  width: 90%;
+  border-radius: 8px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.close-btn {
+  margin-top: 15px;
+  padding: 8px 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.event-timeline-container {
+  padding: 20px;
+  background: #f4f4f4; /* Adjust for your needs */
+}
+
+.event-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.event-status-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-top: 10px;
+  font-size: 0.8em;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.event-status-badge.upcoming { background: #2196F3; }
+.event-status-badge.ongoing { background: #FFC107; }
+.event-status-badge.completed { background: #4CAF50; }
+
+
+.timeline-container {
+  padding: 100px 0 0 0;
+  
+  margin: 0 auto;
+}
+
+.timeline-header {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.timeline-element:hover {
+  transform: scale(1.05);
+}
+
+.event-topic {
+  font-style: italic;
+  color: #666;
+}
+
+.details-btn {
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.details-btn:hover {
+  background: linear-gradient(to left, #ff4b2b, #ff416c);
+}
+
+.modal {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
+.vertical-timeline-element:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease-in-out;
+}
+
+.vertical-timeline-element-icon {
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Example gradient */
+  border: none;
+}
+
+.vertical-timeline-element-icon:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.vertical-timeline-element-title{
+  color: black;
+}
+.timeline-container p{
+  color: black;
+  margin-bottom: 10px;
+}
