@@ -2,7 +2,7 @@
 
 CollabKeys is a full-stack MERN-based platform designed specifically for the **Artificial Intelligence and Data Science** department of our college. It enables students to register for technical events, access curated learning resources, and explore career paths — all in one place.
 
----
+
 
 ##  Features
 
@@ -16,7 +16,7 @@ CollabKeys is a full-stack MERN-based platform designed specifically for the **A
 - 📬 Password reset via email
 - 🎉 Public pages: Home, About, Career Path, Resources, Team
 
----
+
 
 ##  Tech Stack
 
@@ -37,7 +37,7 @@ CollabKeys is a full-stack MERN-based platform designed specifically for the **A
 **AI & Extras:**
 - Gemini API (Google's AI) for chatbot responses
 
----
+
 
 ##  Getting Started
 
@@ -47,7 +47,7 @@ Ensure you have the following installed:
 - [MongoDB](https://www.mongodb.com/)
 - npm or yarn
 
----
+
 
 ### Folder Structure
 
@@ -58,7 +58,7 @@ root/
 └── .gitignore
 
 
----
+
 
 ##  Setup Instructions
 
