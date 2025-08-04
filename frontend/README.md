@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# CollabKeys 🎯
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+CollabKeys is a full-stack MERN-based platform designed specifically for the **Artificial Intelligence and Data Science** department of our college. It enables students to register for technical events, access curated learning resources, and explore career paths — all in one place.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+- 👥 Student Registration & Login
+- 🔐 JWT-based Authentication (for secure access to events)
+- 📅 Vertical Timeline showcasing past & upcoming events
+- 🧠 Gemini AI-powered Chatbot for student queries
+- 🎓 Career Paths and curated YouTube playlists
+- 📚 Resources including notes, materials, and links
+- 🖼️ Home page with gallery & event highlights
+- 📬 Password reset via email
+- 🎉 Public pages: Home, About, Career Path, Resources, Team
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tech Stack
 
-### `npm test`
+**Frontend:**
+- React.js
+- HTML, CSS
+- Axios
+- React Router
+- React Vertical Timeline
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Backend:**
+- Node.js
+- Express.js
+- MongoDB
+- JWT for authentication
+- Nodemailer / EmailJS for email services
 
-### `npm run build`
+**AI & Extras:**
+- Gemini API (Google's AI) for chatbot responses
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🔗 Prerequisites
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org/)
+- [MongoDB](https://www.mongodb.com/)
+- npm or yarn
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 📁 Folder Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+root/
+├── frontend/
+├── backend/
+├── README.md
+└── .gitignore
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## ⚙️ Setup Instructions
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/yourusername/collabkeys.git
+cd collabkeys
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2️⃣ Backend Setup
+cd backend
+npm install
 
-### Code Splitting
+**Create .env file inside /backend:**
+MONGO_URI=your_mongo_db_connection_string
+JWT_SECRET=your_jwt_secret
+EMAIL_USER=your_email_service_user
+EMAIL_PASS=your_email_service_password
+GEMINI_API_KEY=your_gemini_api_key
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+then run
+ node server.js
 
-### Analyzing the Bundle Size
+**3️⃣ Frontend Setup**
+cd frontend
+npm install
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The React app will be available at:
+👉 http://localhost:3000
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
