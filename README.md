@@ -18,7 +18,7 @@ CollabKeys is a full-stack MERN-based platform designed specifically for the **A
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 **Frontend:**
 - React.js
@@ -39,9 +39,9 @@ CollabKeys is a full-stack MERN-based platform designed specifically for the **A
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
-### 🔗 Prerequisites
+###  Prerequisites
 Ensure you have the following installed:
 - [Node.js](https://nodejs.org/)
 - [MongoDB](https://www.mongodb.com/)
@@ -49,7 +49,7 @@ Ensure you have the following installed:
 
 ---
 
-### 📁 Folder Structure
+### Folder Structure
 
 root/
 ├── frontend/
@@ -60,14 +60,14 @@ root/
 
 ---
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
-### 1️⃣ Clone the repository
+### 1️. Clone the repository
 ```bash
 git clone https://github.com/yourusername/collabkeys.git
 cd collabkeys
 
-2️⃣ Backend Setup
+2️. Backend Setup
 cd backend
 npm install
 
@@ -81,7 +81,7 @@ GEMINI_API_KEY=your_gemini_api_key
 then run
  node server.js
 
-3️⃣ Frontend Setup
+3️. Frontend Setup
 cd frontend
 npm install
 npm start
