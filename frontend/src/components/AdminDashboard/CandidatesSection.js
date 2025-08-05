@@ -9,7 +9,7 @@ const CandidatesSection = () => {
   useEffect(() => {
     const fetchUnapprovedUsers = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/users/unapproved');
+        const response = await axios.get('https://collabkeys-backend.onrender.com/api/users/unapproved');
         setUnapprovedUsers(response.data);
       } catch (error) {
         console.error('Error fetching unapproved users:', error);
@@ -21,7 +21,7 @@ const CandidatesSection = () => {
   // Approve a user
   const approveUser = async (userId) => {
     try {
-      await axios.put(`http://localhost:5000/api/users/${userId}/approve`);
+      await axios.put(`https://collabkeys-backend.onrender.com/api/users/${userId}/approve`);
       // Update local state to remove the approved user from the unapproved list
       setUnapprovedUsers(unapprovedUsers.filter((user) => user._id !== userId));
     } catch (error) {
