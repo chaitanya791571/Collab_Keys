@@ -394,10 +394,10 @@ padding: 20px 0;
 /*albums*/
 .container{
 position: absolute;
-top: 105%;
+top: 180%;
 left: 19%;
-margin-top: 40%;
-bottom: 0;
+margin-top: 45%;
+bottom: 30;
 transform: translate(-10%, -10%);
 width: 80%;
 height:85%;
@@ -1094,7 +1094,7 @@ top:10px;
 
   .container{
     position: absolute;
-    top: 130%;
+    top: 180%;
     left: 11%;
     transform: translate(-10%, -10%);
     width: 95%;
