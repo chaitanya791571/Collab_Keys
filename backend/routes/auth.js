@@ -107,7 +107,7 @@ router.post('/request-reset', async (req, res) => {
     await user.save();
 
     // Correcting the reset URL
-    const resetUrl = `http://localhost:3000/reset-password/${resetToken}`;
+    const resetUrl = `https://collabkeys.onrender.com/reset-password/${resetToken}`;
 
     // Ensure fullName is passed (defaulting to 'User' if not available)
     sendResetPasswordEmail(email, user.fullName || 'User', resetUrl);
