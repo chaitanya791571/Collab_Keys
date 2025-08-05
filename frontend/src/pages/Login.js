@@ -20,7 +20,7 @@ const LoginForm = () => {
 
     try {
       // Send login request
-      const response = await axios.post('http://localhost:5000/api/auth/login', { email, password: password.trim() });
+      const response = await axios.post('https://collabkeys-backend.onrender.com/api/auth/login', { email, password: password.trim() });
 
       // Save token and user name to local storage on successful login
       const { token, user } = response.data;
