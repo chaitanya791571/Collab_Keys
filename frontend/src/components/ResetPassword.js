@@ -22,7 +22,7 @@ const ResetPassword = () => {
 
     try { 
       const response = await axios.post(
-        `http://localhost:5000/api/auth/reset-password/${token}`,
+        `https://collabkeys-backend.onrender.com/api/auth/reset-password/${token}`,
         JSON.stringify({ password }),
         {headers: { "Content-Type": "application/json" }}); // Update with your API endpoint 
     
