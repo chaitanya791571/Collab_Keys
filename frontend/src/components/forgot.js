@@ -10,7 +10,7 @@ const ForgotPassword = () => {
     e.preventDefault();
     
     try {
-      await axios.post('http://localhost:5000/api/auth/request-reset', { email }); // Update with your API endpoint
+      await axios.post('https://collabkeys-backend.onrender.com/api/auth/request-reset', { email }); // Update with your API endpoint
       setMessage('A password reset link has been sent to your email.');
     } catch (error) {
       setMessage('Error: Could not send reset link. Please try again later.');
