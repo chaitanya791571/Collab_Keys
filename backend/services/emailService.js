@@ -133,7 +133,7 @@ const sendWelcomeEmail = (email, fullName) => {
     <footer>
       <p>We can't wait to see your creativity and ambition in action!</p>
       <p>Warm regards,<br>CollabKeys Tech Club<br><em>Igniting Innovation. Empowering Students.</em></p>
-      <p>Connect with us on <strong><a href="#">CollabKeys</a></strong> to stay inspired!</p>
+      <p>Connect with us on <strong><a href="https://collabkeys.onrender.com/">CollabKeys</a></strong> to stay inspired!</p>
     </footer>
   </div>
 </body>
