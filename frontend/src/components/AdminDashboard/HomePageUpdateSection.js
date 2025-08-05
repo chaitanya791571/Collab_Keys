@@ -11,7 +11,7 @@ const HomePageUpdateSection = ({triggerRefresh}) => {
             return;
         }
         try {
-            const response = await axios.post('http://localhost:5000/api/home/update-date', {
+            const response = await axios.post('https://collabkeys-backend.onrender.com/api/home/update-date', {
               id: selectedEventId, // Pass the event ID
               date: eventDate, // Pass the new date
             });
