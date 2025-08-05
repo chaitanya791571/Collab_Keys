@@ -14,7 +14,7 @@ const EventTimeline = ({ triggerRefresh, refreshKey }) => { // Receive the props
   // Function to fetch events
   const fetchEvents = useCallback(() => {
     axios
-      .get('http://localhost:5000/api/auth/events')
+      .get('https://collabkeys-backend.onrender.com/api/auth/events')
       .then((response) => setEvents(response.data))
       .catch((error) => console.error('Error fetching events data:', error));
   }, []);
