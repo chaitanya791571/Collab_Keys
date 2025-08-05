@@ -7,7 +7,7 @@ const EventSection = () => {
 
   const fetchEvents = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/events');
+      const response = await axios.get('https://collabkeys-backend.onrender.com/api/events');
       setEvents(response.data);
     } catch (error) {
       console.error('Error fetching events:', error);
@@ -20,7 +20,7 @@ const EventSection = () => {
 
   const handleAddEvent = async () => {
     try {
-      await axios.post('http://localhost:5000/api/events', newEvent);
+      await axios.post('https://collabkeys-backend.onrender.com/api/events', newEvent);
       fetchEvents();
       setNewEvent({ title: '', description: '', link: '' });
     } catch (error) {
@@ -30,7 +30,7 @@ const EventSection = () => {
 
   const handleDeleteEvent = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/events/${id}`);
+      await axios.delete(`https://collabkeys-backend.onrender.com/api/events/${id}`);
       fetchEvents();
     } catch (error) {
       console.error('Error deleting event:', error);
