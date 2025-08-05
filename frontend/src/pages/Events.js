@@ -16,7 +16,7 @@ const EventsPage = () => {
           throw new Error('No token found');
         }
   
-        const response = await axios.get('http://localhost:5000/api/users/user', {
+        const response = await axios.get('https://collabkeys-backend.onrender.com/api/users/user', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -42,7 +42,7 @@ const EventsPage = () => {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/events');
+        const response = await axios.get('https://collabkeys-backend.onrender.com/api/events');
         setEvents(response.data); // Set fetched events
       } catch (error) {
         console.error('Failed to fetch events:', error.response?.data || error.message);
